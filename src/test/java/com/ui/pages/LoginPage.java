@@ -20,8 +20,8 @@ public final class LoginPage extends BrowserUtility {
 		enterText(EMAIL_TEXT_BOX_LOCATOR, emailAddress);
 		enterText(PASSWORD_TEXT_BOX_LOCATOR, password);
 		clickOn(SUBMIT_LOGIN_BUTTON_LOCATOR);
-		
-		MyAccountPage myAccountPage=new MyAccountPage(getDriver());
+
+		MyAccountPage myAccountPage = new MyAccountPage(getDriver());
 		return myAccountPage;
 
 	}

@@ -1,9 +1,12 @@
 package com.ui.pages;
 
 import org.openqa.selenium.By;
-
 import com.constants.Browser;
+import static com.constants.Env.*;
 import com.utility.BrowserUtility;
+import com.utility.JSONUtility;
+
+import static com.utility.PropertiesUtil.*;
 
 public final class HomePage extends BrowserUtility {
 
@@ -11,13 +14,13 @@ public final class HomePage extends BrowserUtility {
 
 	public HomePage(Browser browserName) {
 		super(browserName);
-		goToWebsite("https://automationpractice.techwithjatin.com/");
+		goToWebsite(JSONUtility.readJSON(QA));
 	}
 
 	public LoginPage goToLoginPage() {
 		clickOn(SIGN_IN_LINK_LOCATOR);
-		
-		LoginPage loginPage=new LoginPage(getDriver());
+
+		LoginPage loginPage = new LoginPage(getDriver());
 		return loginPage;
 
 	}
