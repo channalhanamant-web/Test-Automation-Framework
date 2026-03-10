@@ -1,6 +1,12 @@
 package com.utility;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,22 +17,22 @@ import com.constants.Browser;
 
 public abstract class BrowserUtility {
 
-	private WebDriver driver;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	public WebDriver getDriver() {
-		return driver;
+		return driver.get();
 	}
 
 	public BrowserUtility(WebDriver driver) {
 		super();
-		this.driver = driver;
+		this.driver.set(driver);
 	}
 
 	public BrowserUtility(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 		} else {
 			System.out.println("Invalid browser name, please select chrom or edge");
 		}
@@ -35,37 +41,53 @@ public abstract class BrowserUtility {
 
 	public BrowserUtility(Browser browserName) {
 		if (browserName == Browser.CHROME) {
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		} else if (browserName == Browser.EDGE) {
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 		} else if (browserName == Browser.FIREFOX) {
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 
 	}
 
 	public void goToWebsite(String url) {
-		driver.get(url);
+		driver.get().get(url);
 	}
 
 	public void maximizeWindow() {
-		driver.manage().window().maximize();
+		driver.get().manage().window().maximize();
 	}
 
 	public void clickOn(By locator) {
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		element.click();
 	}
 
 	public void enterText(By locator, String textToEnter) {
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		element.sendKeys(textToEnter);
 	}
 
 	public String getVisibleText(By locator) {
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		return element.getText();
 
 	}
 
+	public String takeScreenShot(String name) {
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+
+		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir") + "//screenshots//" + name;
+		File screenshotFile = new File(path);
+		try {
+			FileUtils.copyFile(screenshotData, screenshotFile);
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+		return path;
+
+	}
 }

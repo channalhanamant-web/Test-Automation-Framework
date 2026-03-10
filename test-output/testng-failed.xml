@@ -5,8 +5,10 @@
     <classes>
       <class name="com.ui.tests.LoginTestOld">
         <methods>
+          <include name="loginTest"/>
+          <include name="loginCSVTest"/>
           <include name="setUp"/>
-          <include name="loginExcelTest" invocation-numbers="0 1 2"/>
+          <include name="loginExcelTest"/>
         </methods>
       </class> <!-- com.ui.tests.LoginTestOld -->
     </classes>

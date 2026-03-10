@@ -11,9 +11,9 @@ public class LoginTest2 {
 	public static void main(String[] args) {
 		WebDriver wd = new ChromeDriver(); // launch and create browser session
 
-		HomePage homePage = new HomePage(wd);
-		LoginPage loginPage = homePage.goToLoginPage();
-		loginPage.doLoginWith("nidijiv259@pazuric.com", "password");
+		//HomePage homePage = new HomePage(wd);
+		//LoginPage loginPage = homePage.goToLoginPage();
+		//loginPage.doLoginWith("nidijiv259@pazuric.com", "password");
 
 	}
 

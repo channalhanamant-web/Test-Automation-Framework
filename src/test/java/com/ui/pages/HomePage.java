@@ -14,7 +14,7 @@ public final class HomePage extends BrowserUtility {
 
 	public HomePage(Browser browserName) {
 		super(browserName);
-		goToWebsite(JSONUtility.readJSON(QA));
+		goToWebsite(JSONUtility.readJSON(QA).getUrl());
 	}
 
 	public LoginPage goToLoginPage() {

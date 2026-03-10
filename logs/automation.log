@@ -1,0 +1,117 @@
+2026-03-09 22:52:32 [main] INFO com.ui.listeners.TestListener Test Suite Started 
+2026-03-09 22:53:25 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-03-09 22:53:25 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:53:25 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:53:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener loginTest 
+2026-03-09 22:53:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:53:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:53:29 [TestNG-test-UI Automation Test-1] WARN com.ui.listeners.TestListener loginCSVTest SKIPPED 
+2026-03-09 22:53:30 [TestNG-test-UI Automation Test-3] WARN com.ui.listeners.TestListener loginTest SKIPPED 
+2026-03-09 22:53:32 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-03-09 22:53:32 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:53:32 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:53:33 [TestNG-test-UI Automation Test-2] WARN com.ui.listeners.TestListener loginExcelTest SKIPPED 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener loginTest 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:54:08 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:54:12 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-03-09 22:54:12 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:54:12 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:54:13 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener loginTest FAILED 
+2026-03-09 22:54:13 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81fb72f947ab174125902f5a3c6c6001, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57708}, goog:processID: 18004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57708/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81fb72f947ab174125902f5a3c6c6001 
+2026-03-09 22:54:13 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener loginCSVTest FAILED 
+2026-03-09 22:54:13 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d4dd6a656ff031f30dfc178910edecf, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57700}, goog:processID: 18404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57700/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d4dd6a656ff031f30dfc178910edecf 
+2026-03-09 22:54:16 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener loginExcelTest FAILED 
+2026-03-09 22:54:16 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8103b2b543cde88c3315bf9f6e7006be, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57718}, goog:processID: 9312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57718/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8103b2b543cde88c3315bf9f6e7006be 
+2026-03-09 22:55:02 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-03-09 22:55:02 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:55:02 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:55:03 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener loginTest 
+2026-03-09 22:55:03 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:55:03 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:55:08 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener loginCSVTest FAILED 
+2026-03-09 22:55:08 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [253dadcd06741263477e81071b0123e6, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, goog:processID: 17260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 253dadcd06741263477e81071b0123e6 
+2026-03-09 22:55:10 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener loginTest FAILED 
+2026-03-09 22:55:10 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a452b9dc45fbe8a74b372943d99fe14, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57798}, goog:processID: 21112, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57798/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a452b9dc45fbe8a74b372943d99fe14 
+2026-03-09 22:55:56 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener loginExcelTest 
+2026-03-09 22:55:56 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:55:56 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:56:01 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener loginExcelTest FAILED 
+2026-03-09 22:56:01 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a93c03b3847167374c56767cd86e0134, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57822}, goog:processID: 19532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57822/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a93c03b3847167374c56767cd86e0134 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginCSVTest 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener loginTest 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener verifies with the valid user is able to login into the application 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener loginCSVTest FAILED 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.160)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d14faef2b85291847221bf964055e18, findElement {value=//a[contains(text(),'Sign in')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57919}, goog:processID: 22368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57919/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d14faef2b85291847221bf964055e18 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener loginTest FAILED 
+2026-03-09 22:58:27 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.160)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d14faef2b85291847221bf964055e18, findElement {value=//a[contains(text(),'Sign in')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57919}, goog:processID: 22368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57919/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d14faef2b85291847221bf964055e18 
