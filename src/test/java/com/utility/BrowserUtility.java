@@ -2,6 +2,8 @@ package com.utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -78,7 +80,11 @@ public abstract class BrowserUtility {
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name;
+		Date date = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
+		String timeStamp = format.format(date);
+
+		String path = System.getProperty("user.dir") + "//screenshots//" + name + " - " + timeStamp + ".png";
 		File screenshotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenshotData, screenshotFile);

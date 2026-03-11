@@ -11,6 +11,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.ui.tests.TestBase;
+import com.utility.BrowserUtility;
 import com.utility.ExtentReporterUtility;
 import com.utility.LoggerUtility;
 
@@ -40,7 +42,16 @@ public class TestListener implements ITestListener {
 		logger.error(result.getMethod().getMethodName() + " " + "FAILED");
 		logger.error(result.getThrowable().getMessage());
 		ExtentReporterUtility.getTest().log(Status.FAIL, result.getMethod().getMethodName() + " " + "FAILED");
-		ExtentReporterUtility.getTest().log(Status.FAIL,result.getThrowable().getMessage());
+		ExtentReporterUtility.getTest().log(Status.FAIL, result.getThrowable().getMessage());
+
+		Object testclass = result.getInstance();
+
+		BrowserUtility browserUtility = ((TestBase) testclass).getInstance();
+		logger.info("Capturing screenshot for the failed tests");
+
+		String screenShotpath = browserUtility.takeScreenShot(result.getMethod().getMethodName());
+		logger.info("Attaching screenshot to the HTML file");
+		ExtentReporterUtility.getTest().addScreenCaptureFromPath(screenShotpath);
 	}
 
 	public void onTestSkipped(ITestResult result) {
